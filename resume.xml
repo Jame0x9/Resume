@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+<name>葉星澤</name>
+<contact>
+<email>jab2004x@gmail.com</email>
+<phone_number>+886-93-382-6754</phone_number>
+<location>Taipei</location>
+</contact>
+<languages>
+<language>Chinese</language>
+<language>English</language>
+<language>Thai</language>
+</languages>
+<profile> I am a Computer Science graduate. I have basic skills in coding and software development. I am looking for a job where I can learn, improve, and help a company with my skills. </profile>
+<education>
+<bachelor>
+<university>National Taiwan Normal University</university>
+<department>Computer Science and Information Engineering</department>
+</bachelor>
+</education>
+<hobbies>
+<hobby>Exercise</hobby>
+<hobby>Music</hobby>
+<hobby>Photography</hobby>
+</hobbies>
+<skills>
+<skill>Computer language</skill>
+<skill>Data analysis and web scraping</skill>
+<skill>Web development</skill>
+</skills>
+</portfolio>

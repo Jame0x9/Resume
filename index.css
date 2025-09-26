@@ -1,0 +1,414 @@
+:root{
+
+  --bg-page-color:#130027;
+}
+.Univers{
+  width: 100%;
+}
+  /* Container หลัก */
+.container {
+  width: 100%;           
+  max-width: 1200px;     
+  margin: 0 auto;        
+  padding: 0 20px;       
+  box-sizing: border-box;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #515151;
+  color: #ffffff;
+}
+
+
+
+#small-text-footer{
+  font-size: 13px;
+}
+
+
+/* Responsive breakpoints */
+@media (max-width: 2000px) {
+  .container {
+    max-width: 1000px; /* laptop */
+  }
+  .itd-2{
+  font-size: 20px;
+}
+#sud-cool-No1 {
+  border-radius: 50%;
+  max-width: 100%;   
+  height: 350px;
+  margin: 0 auto;    /* center it inside grid */
+  display: block;
+}
+
+.div1 {
+  padding: 20px;
+}
+
+.div2 {
+  margin-top:0px;
+  margin-left: 20px;
+  padding: 20px;
+}
+.greeding,.greeding2,.greeding3{
+  color: #ffffff;
+}
+.pf-Aikeeack2{
+  display: block;
+  max-height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;      /* ให้ปรับอัตโนมัติ */
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 768px; /* tablet */
+  }
+  .item2-text{
+  font-size: 14px;
+}
+  .pf-Aikeeack2 {
+    width: 100%;
+    height: auto;
+}
+.column-t{
+  font-size: 15px;
+}
+.div2 {
+  margin-top:0px;
+  margin-left: 20px;
+  padding: 20px;
+}
+.greeding,.greeding2,.greeding3{
+  color: #ffffff;
+  text-align: center;
+}
+
+.button-AboutMe{
+  display: block;
+  margin: 0 auto;
+
+}
+
+}
+
+
+/* Moblie*/
+@media (max-width: 500px) {
+
+  .container {
+    max-width: 100%; /* Moblie*/
+    padding: 0 10px;
+  }
+  .greeding,.greeding2,.greeding3{
+    font-size: 20px;
+    text-align: center;
+  }
+  .itd-1{
+  font-size: 10px;
+}
+/* .itd-2{
+  font-size: 10px;
+}
+.item2-text{
+  font-size: 10px;
+} */
+
+.pf-Aikeeack2{
+    width: 100%;
+    height: auto;
+
+    
+}
+ .itd-2{
+  font-size: 14px;
+}
+.item-2{
+  font-size: 14px;
+}
+.column-t{
+  font-size: 13px;
+}
+#sud-cool-No1 {
+  border-radius: 50%;
+  max-width: 100%;   
+  height: 250px;
+  margin: 0 auto;    /* center it inside grid */
+  display: block;
+}
+
+.name-song{
+  font-size: 10px;
+}
+
+
+
+}
+
+
+/* -----------------------------------------------------------------*/
+
+body{
+  margin: 0px;
+  font-family: "Sans-serif";
+  font-size: 20px;
+
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+/*以下是 main */
+
+.main-page {
+  padding-top: 50px;
+  min-height: 500px; /* instead of fixed height */
+  background-color: var(--bg-page-color);
+  background-image: linear-gradient(var(--bg-page-color),  #5818B2);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+/* Responsive greeting text */
+.greeding {
+  font-size: clamp(2rem, 5vw, 70px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/*以下是 nav link to IG FAC GMAIl ..*/
+.nav-main{
+  height: 70px;
+  background-color: #5818B2;
+ 
+
+}
+.lis-nav{
+  display: inline-block;
+  width: 70px;
+  margin: 0 auto;
+  font-size: 40px;
+  padding-top: 0px;
+  
+}
+
+
+.ul-nav{
+   margin: 0px;
+   text-align: center;
+}
+
+.second-nav{
+  height: 120px;
+  padding-left: 20px;
+
+}
+
+.itd-1{
+  font-size: 35px;
+}
+
+.iconk {
+  color: black;          
+}
+
+
+/* main for contact*/
+
+.box-contact{
+  
+  margin: auto;
+  height: 380px;
+  width: 380px;
+  background-color: rgb(255, 255, 255);
+  background-image: url(./photos/ainan_a.jpg);
+  border-radius: 40px;
+  background-size: cover; 
+}
+
+.form-contact{
+
+  text-align: center;
+}
+
+.contact-form{
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #E2E2E2;
+  padding: 5px;
+  font-size: 10px;
+  width: 60%;
+}
+
+#submit-bt{
+   background-color: rgb(77, 238, 182);
+   width: 60px;
+}
+
+#Message{
+  height: 80px;;
+}
+
+.contact-L{
+  color: #b0b0b0;
+}
+
+
+.button-AboutMe{
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(227, 118, 254, 1);
+}
+
+
+/*for_myinterest.html*/
+
+  .flex-container {
+
+    display: flex;
+    justify-content: center;     
+    height: 100%;
+    padding: 1px;
+    gap: 5px;
+
+  }
+
+  .flex-container > div{
+    border-radius: 5px;
+  }
+  .item1,.item2{
+    height: 180px;
+    width: 50%;;
+    color: #E2E2E2;
+  }
+  .item3,.item4{
+    height: 220px;
+    width: 50%;;
+    color: #E2E2E2;
+  }
+.pf-Aikeeack {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  height: auto;      /* ให้ปรับอัตโนมัติ */
+  border-radius: 16px;
+}
+
+  
+/*table blee blee*/
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  background-color: #E2E2E2;
+}
+
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+/* tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+} */
+
+tfoot th { text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.table-songs{
+  width: 60%;
+}
+
+
+ .flex-container2 {
+
+    display: flex;
+    
+    justify-content: center; 
+    align-items: flex-start;    
+
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+  .flex-container2 > div{
+      display: flex;
+    justify-content: center;     
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    gap: 5px;
+    height: 300px;
+
+  }
+
+
+  .i-text,.i-pic { 
+      height: 180px;
+    width: 30%;;
+    color: #E2E2E2;
+  }
+  .i-text{
+    position: relative;
+    right: 25px;
+
+  }
+  .i-pic { 
+    /* flex:1 1 auto; */
+    flex-grow:1;
+  }
+.second-main{ margin-left: auto;
+   margin-right: auto;
+    width: 80%; 
+  }
+
+
+  /* for interest-page- picture 3nd*/
+
