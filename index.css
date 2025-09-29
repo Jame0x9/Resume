@@ -51,12 +51,31 @@ footer {
   margin-left: 20px;
   padding: 20px;
 }
+/*Neon color*/
+.greeding{
+  animation: neonAnim 2s alternate-reverse infinite;
+    color: #EB62FD;
+    font-family: Bahnschrift;
+    font-size: 72px;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 31px rgba(235, 98, 253, .7),
+          0 0 61px rgba(235, 98, 253, .7),
+          0 0 121px rgba(235, 98, 253, .7);
+      }
+      to {
+        text-shadow:
+          0 0 26px rgba(235, 98, 253, .7),
+          0 0 41px rgba(235, 98, 253, .7),
+          0 0 81px rgba(235, 98, 253, .7);
+      }
+}
+
+
 .greeding{
   font-size: 60px;
-  background-image: linear-gradient(to right, #DEACBE, #c802ff); /* Example gradient */
-  -webkit-background-clip: text; 
-  background-clip: text;
-  color: transparent; 
 }
 
 .greeding2,.greeding3{
