@@ -25,7 +25,7 @@
 }
 
 .menu-bar li a:hover {
-  background-color: rgba(106, 8, 163, 1);
+  background-color: rgb(239, 131, 238);
 }
 
 
@@ -68,13 +68,8 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color:rgba(106, 8, 163, 1);
+  background-color:rgb(239, 131, 238);
 }
-
-
-
-
-
 
 
 
