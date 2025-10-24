@@ -1,54 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="menu_bar.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="menu_bar.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
 
 
 
 
-  <body>
-    <!-- Menu bar-->
-    <header>
-      <ul class="menu-bar">
-        <li style="float: left"><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body>
+  <!-- Menu bar-->
+  <header>
+    <ul class="menu-bar">
+      <li style="float: left"><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
 
-        <li>
-          <div class="dropdown">
-            <button class="dropbtn">
-              About me
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="me_myInterest.html">MyInterest</a>
-              <a href="me_Gallery.html">My Gallery</a>
-            </div>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="me_myInterest.html">MyInterest</a>
+            <a href="me_Gallery.html">My Gallery</a>
           </div>
-        </li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
+        </div>
+      </li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+    </ul>
+  </header>
+  <!-- Menu bar-->
+
+  <main class="main-page">
+    <div id="resume-container" class="resume-style">
+      <!-- The XML content will be loaded here dynamically -->
+
+    </div>
+
+
+  </main>
+
+
+
+  <footer>
+    <p id="small-text-footer">&copy; 2025 XingzeYe NTNU 41347053S</p>
+  </footer>
+
+  <script>
+    fetch('resume.xml')
+      .then(response => response.text())
+      .then(xmlText => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+
+        // Get data from XML
+        const name = xmlDoc.querySelector('name').textContent;
+        const email = xmlDoc.querySelector('email').textContent;
+        const phone = xmlDoc.querySelector('phone_number').textContent;
+        const location = xmlDoc.querySelector('location').textContent;
+        const profile = xmlDoc.querySelector('profile').textContent;
+        const university = xmlDoc.querySelector('university').textContent;
+        const department = xmlDoc.querySelector('department').textContent;
+
+        // Get lists
+        const languages = xmlDoc.querySelectorAll('language');
+        const hobbies = xmlDoc.querySelectorAll('hobby');
+        const skills = xmlDoc.querySelectorAll('skill');
+
+        // Create HTML
+        const container = document.getElementById('resume-container');
+        container.innerHTML = `
+      <h1>${name}</h1>
+      
+      <h2>Contact</h2>
+      <p>Email: ${email}</p>
+      <p>Phone: ${phone}</p>
+      <p>Location: ${location}</p>
+      
+      <h2>Profile</h2>
+      <p>${profile}</p>
+      
+      <h2>Education</h2>
+      <p>${university} - ${department}</p>
+      
+      <h2>Languages</h2>
+      <ul>
+        ${Array.from(languages).map(lang => `<li>${lang.textContent}</li>`).join('')}
       </ul>
-    </header>
-    <!-- Menu bar-->
+      
+      <h2>Skills</h2>
+      <ul>
+        ${Array.from(skills).map(skill => `<li>${skill.textContent}</li>`).join('')}
+      </ul>
+      
+      <h2>Hobbies</h2>
+      <ul>
+        ${Array.from(hobbies).map(hobby => `<li>${hobby.textContent}</li>`).join('')}
+      </ul>
+    `;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('resume-container').innerHTML = '<p>Error loading data</p>';
+      });
+  </script>
 
-    <main class="main-page">
 
+</body>
 
-
-    </main>
-
-
-
-    <footer>
-      <p id="small-text-footer">&copy; 2025 XingzeYe NTNU 41347053S</p>
-    </footer>
-  </body>
 </html>

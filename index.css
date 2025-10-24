@@ -149,7 +149,9 @@ padding-top: 30px;
 
 /* Moblie*/
 @media (max-width: 500px) {
-
+.icon-contact{
+  font-size: 44px;
+}
   .container {
     max-width: 100%; /* Moblie*/
     padding: 0 10px;
@@ -213,6 +215,10 @@ body{
   height: 100%;
   width: 100%;
 
+}
+
+.second-nav{
+  background-color: aliceblue;
 }
 
 /*以下是 main */
@@ -301,7 +307,7 @@ body{
 
 #submit-bt{
    background-color: rgb(77, 238, 182);
-   width: 70px;
+   width: 90px;
    height: auto;
    color: black;
    text-decoration: none;
@@ -451,7 +457,8 @@ tfoot td {
     /* flex:1 1 auto; */
     flex-grow:1;
   }
-.second-main{ margin-left: auto;
+.second-main{ 
+  margin-left: auto;
    margin-right: auto;
     width: 80%; 
   }
@@ -542,4 +549,90 @@ tfoot td {
 .bg-gallerry button {
     z-index: 1; /* Changed from 2 to 1 */
     position: relative;
+}
+
+
+/*gride Gallery*/
+
+  * { box-sizing: border-box; }
+
+  /* gallery container */
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;          /* allow wrapping to next line */
+    gap:24px;                /* space between blocks */
+    padding:24px;
+    max-width:1200px;
+    margin-inline:auto;
+  }
+
+  /* each block/card */
+  .card{
+    flex:0 0 calc(33.333% - 24px); /* exactly 3 per row */
+    max-width:calc(33.333% - 24px);
+    background:#e9e9ef;
+    color:#222;
+    border-radius:14px;
+    padding:12px;
+  }
+
+  .thumb{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    aspect-ratio: 4/3;      /* keeps a nice rectangle; remove if not needed */
+    object-fit:cover;
+    background:#cfcfe6;     /* fallback color while loading */
+  }
+
+  .title{
+    margin:10px 6px 2px;
+    font-size:0.95rem;
+    font-style:italic;
+    opacity:.8;
+  }
+
+  /* mobile: 1 per row */
+  @media (max-width: 640px){
+    .card{
+      flex-basis:100%;
+      max-width:100%;
+    }
+  }
+
+.nav-bar-svg{
+  height: 300px;
+}
+
+
+
+
+body{
+  background-color:#5818B2;
+}
+
+
+/* resume-style */
+
+.resume-style{
+  margin: 40px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 50px;
+}
+.video-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16/9; 
+}
+
+
+.nav-bar-svg{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
 }

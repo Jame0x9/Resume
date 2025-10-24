@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="menu_bar.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
-
-
-
 
   <body>
     <!-- Menu bar-->
-        <header>
+    <header>
       <ul class="menu-bar">
         <li style="float: left"><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -38,19 +38,77 @@
     </header>
     <!-- Menu bar-->
 
-
-    
     <div class="bg-gallerry">
       <h1 class="wellcome-gallery">WELL COME</h1>
-      <p class="gallery-text">Welcome to my gallery; here, you'll find a curated collection that reflects my passions.</p>
+      <p class="gallery-text">
+        Welcome to my gallery; here, you'll find a curated collection that
+        reflects my passions.
+      </p>
       <button onclick="location.href='contact.html'">Lean More</button>
     </div>
 
+
     <main class="main-page">
+          <div class="nav-bar-svg">
+   
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="30" height="70" width="70" style="stroke:green;fill:red">
+    <animateTransform
+      attributeName="transform"
+      begin="0s"
+      dur="10s"
+      type="rotate"
+      from="0 85 85"
+      to="360 85 85"
+      repeatCount="indefinite" />
+  </rect>
+</svg>
+    </div>
 
-    </main>
+  <section class="gallery">
+    <!-- duplicate .card as many as you need -->
+    <article class="card">
+      <img class="thumb" src="photos/500daysOfSummer.jpg" alt="thumbnail">
+      <div class="title">Lovely Movies</div>
+
+    </article>
+
+    <article class="card">
+  <video class="video-responsive" autoplay loop muted playsinline>
+    <source src="photos/jellyfishVi.mp4" type="video/mp4">
+  </video>
+  <div class="title">Aquarium</div>
+</article>
+
+    <article class="card">
+      <img class="thumb" src="photos/harry_potter.jpg" alt="thumbnail">
+      <div class="title">Lovely Movies</div>
+    </article>
+
+  
+    <article class="card">
+      <img class="thumb" src="photos/movies01.jpg" alt="thumbnail">
+      <div class="title">Lovely Movies</div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="photos/sea_view.jpg" alt="thumbnail">
+      <div class="title">sunset Sea</div>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="photos/stop.jpg" alt="thumbnail">
+      <div class="title">Lovely Movies</div>
+    </article>
+
+    
+
+</body>
+
+</html>
 
 
+</main>
 
     <footer>
       <p id="small-text-footer">&copy; 2025 XingzeYe NTNU 41347053S</p>
