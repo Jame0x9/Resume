@@ -134,7 +134,7 @@ footer {
 
 }
 .nav-main{
-padding-top: 30px;
+padding: 30px;
 }
 
 .greeding{
@@ -251,7 +251,7 @@ body{
 
 /*以下是 nav link to IG FAC GMAIl ..*/
 .nav-main{
-  height: 70px;
+  padding: 30px;
   background-color: #5818B2;
  
 
