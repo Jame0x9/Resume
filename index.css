@@ -4,7 +4,7 @@
 .Univers{
   width: 100%;
 }
-  /* Container หลัก */
+  /* Container main */
 .container {
   width: 100%;           
   max-width: 1200px;     
@@ -102,10 +102,10 @@ footer {
 }
 
 
-
+/* tablet */
 @media (max-width: 760px) {
   .container {
-    max-width: 768px; /* tablet */
+    max-width: 768px; 
   }
   .item2-text{
   font-size: 14px;
@@ -288,7 +288,6 @@ body{
 
 
 /* main for contact*/
-
 
 .form-contact{
 
@@ -642,6 +641,17 @@ body{
   margin: auto;
   width: 60%;
   padding: 30px;
-  background-image: linear-gradient(#c1aace
-  ,  #e69af3);
+
+
+
+
+  background-image: linear-gradient(#c1aace, #e69af3);
+
+
+
+
+
+
+
+
 }
