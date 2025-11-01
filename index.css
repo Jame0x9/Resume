@@ -636,3 +636,12 @@ body{
   align-items: center;
   height: 120px;
 }
+
+.resume-style{
+  
+  margin: auto;
+  width: 60%;
+  padding: 30px;
+  background-image: linear-gradient(#c1aace
+  ,  #e69af3);
+}

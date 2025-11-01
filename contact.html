@@ -17,26 +17,22 @@
 
 <body>
   <!-- Menu bar-->
-  <header>
-    <ul class="menu-bar">
-      <li style="float: left"><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  
+     <header>
 
-      <li>
-        <div class="dropdown">
-          <button class="dropbtn">
-            About me
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="me_myInterest.html">MyInterest</a>
-            <a href="me_Gallery.html">My Gallery</a>
-          </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="me_Gallery.html">My Gallery</a>
+        <a href="me_myInterest.html">My Interest</a>
+        <a href="contact.html">Contact</a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i
+            class="fa fa-bars"></i> 
+        </a>
         </div>
-      </li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-    </ul>
-  </header>
+
+    </header>
+
   <!-- Menu bar-->
 
   <main class="main-page">
@@ -115,6 +111,19 @@
   <footer>
     <p id="small-text-footer">&copy; 2025 XingzeYe NTNU 41347053S</p>
   </footer>
+  <script>
+   
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    </script>
+
 </body>
 
 </html>
