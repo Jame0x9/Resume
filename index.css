@@ -149,6 +149,17 @@ padding: 30px;
 
 /* Moblie*/
 @media (max-width: 500px) {
+  #sud-cool-No1 {
+  border-radius: 50%;
+  max-width: 100%;   
+  height: 250px;
+  margin: 0 auto;   
+  display: block;
+}
+
+
+
+
 .icon-contact{
   font-size: 44px;
 }
@@ -175,13 +186,6 @@ padding: 30px;
 }
 .column-t{
   font-size: 13px;
-}
-#sud-cool-No1 {
-  border-radius: 50%;
-  max-width: 100%;   
-  height: 250px;
-  margin: 0 auto;    /* center it inside grid */
-  display: block;
 }
 
 .name-song{
@@ -639,17 +643,12 @@ body{
 .resume-style{
   
   margin: auto;
-  width: 60%;
-  padding: 30px;
-
+  width: 70%;
+  padding: 10px;
 
 
 
   background-image: linear-gradient(#c1aace, #e69af3);
-
-
-
-
 
 
 
